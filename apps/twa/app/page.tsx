@@ -32,10 +32,9 @@ export default function Home() {
           priority
         />
         <ol>
-          <li>
-            Get started by editing <code>apps/web/app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Hello World</li>
+          <li>Alice 你看到了吗</li>
+          <li>V我50</li>
         </ol>
 
         <div className={styles.ctas}>
