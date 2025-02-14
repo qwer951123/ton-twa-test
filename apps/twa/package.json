@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev:next": "next dev --turbopack --port 3000",
-    "dev:ngrok": "ngrok http 3000",
+    "dev:ngrok": "node scripts/dev-env.js",
     "dev": "concurrently \"pnpm run dev:next\" \"pnpm run dev:ngrok\"",
     "build": "next build",
     "start": "next start",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@telegram-apps/sdk-react": "^3.0.10",
+    "@repo/ton-connect-ui-react": "workspace:*",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
