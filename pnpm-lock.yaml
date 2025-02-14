@@ -103,6 +103,9 @@ importers:
       '@types/react-dom':
         specifier: 19.0.3
         version: 19.0.3(@types/react@19.0.8)
+      autoprefixer:
+        specifier: ^10.4.17
+        version: 10.4.20(postcss@8.5.2)
       concurrently:
         specifier: ^9.1.2
         version: 9.1.2
@@ -112,6 +115,12 @@ importers:
       ngrok:
         specifier: 5.0.0-beta.2
         version: 5.0.0-beta.2
+      postcss:
+        specifier: ^8.4.35
+        version: 8.5.2
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.17(ts-node@10.9.2(@types/node@22.13.0)(typescript@5.7.3))
       typescript:
         specifier: 5.7.3
         version: 5.7.3

@@ -1,3 +1,4 @@
+import { navigator } from "../../configs/navigator";
 import NavigationBar from "./navigation-bar";
 
 export default function MainLayout({
@@ -8,7 +9,7 @@ export default function MainLayout({
   return (
     <main className="flex min-h-screen flex-col">
       <div className="flex-1">{children}</div>
-      <NavigationBar />
+      <NavigationBar items={navigator} />
     </main>
   );
 }

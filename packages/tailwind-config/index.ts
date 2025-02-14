@@ -8,10 +8,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "var(--primary)",
+        "accent-blue": "var(--accent-blue)",
         "muted-foreground": "var(--muted-foreground)",
+        "separator-non-opaque": "var(--separator-non-opaque)",
       },
       spacing: {
-        "navigation-bar-height": "48px",
         "safe-x":
           "env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px)",
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",

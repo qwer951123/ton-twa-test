@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./icons": "./src/icons/index.ts",
+    "./theme": "./src/theme/default.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

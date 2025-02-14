@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "@repo/ui/theme";
 import TWAProvider from "../components/providers/twa-provider";
 import MainLayout from "../components/layout/main-layout";
 
