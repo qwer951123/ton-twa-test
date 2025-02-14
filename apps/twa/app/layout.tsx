@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import TWAProvider from "../components/providers/twa-provider";
+import MainLayout from "../components/layout/main-layout";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TWAProvider>{children}</TWAProvider>
+        <TWAProvider>
+          <MainLayout>{children}</MainLayout>
+        </TWAProvider>
       </body>
     </html>
   );

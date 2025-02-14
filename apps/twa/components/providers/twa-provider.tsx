@@ -1,6 +1,6 @@
 "use client";
 
-import { init, backButton, viewport } from "@telegram-apps/sdk-react";
+import { init, isTMA } from "@telegram-apps/sdk-react";
 import { useEffect } from "react";
 import { tonconnectManifest } from "../../configs/tonconnect-manifest";
 
@@ -13,17 +13,10 @@ export default function TWAProvider({
 }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      init();
+      // check if the app is running in a TWA
 
-      if (backButton.show.isAvailable()) {
-        backButton.show();
-      }
-
-      if (viewport.requestFullscreen.isAvailable()) {
-        viewport.requestFullscreen().then(() => {
-          console.log("fullscreen");
-          viewport.isFullscreen();
-        });
+      if (isTMA()) {
+        init();
       }
     }
   }, []);
