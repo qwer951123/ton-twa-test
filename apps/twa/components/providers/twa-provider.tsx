@@ -1,8 +1,9 @@
 "use client";
 
-import { init } from "@telegram-apps/sdk-react";
+import { init, backButton, viewport } from "@telegram-apps/sdk-react";
 import { useEffect } from "react";
 import { tonconnectManifest } from "../../configs/tonconnect-manifest";
+
 import { TonConnectUIProvider } from "@repo/ton-connect-ui-react";
 
 export default function TWAProvider({
@@ -14,7 +15,16 @@ export default function TWAProvider({
     if (typeof window !== "undefined") {
       init();
 
-      console.log("init");
+      if (backButton.show.isAvailable()) {
+        backButton.show();
+      }
+
+      if (viewport.requestFullscreen.isAvailable()) {
+        viewport.requestFullscreen().then(() => {
+          console.log("fullscreen");
+          viewport.isFullscreen();
+        });
+      }
     }
   }, []);
 

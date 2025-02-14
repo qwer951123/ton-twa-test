@@ -1,3 +1,3 @@
 export const tonconnectManifest = {
-  url: "https://73c0-182-255-32-49.ngrok-free.app/tonconnect-manifest.json?ngrok-skip-browser-warning=69420",
+  url: "https://ton-twa-test-git-main-qwer951123s-projects.vercel.app/tonconnect-manifest.json",
 };
