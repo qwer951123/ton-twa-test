@@ -14,14 +14,14 @@ const WalletIcon = React.forwardRef<
     {...props}
   >
     <path
-      stroke="#200E32"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="M21.639 14.84H17.59a2.693 2.693 0 0 1-2.693-2.692 2.693 2.693 0 0 1 2.693-2.691h4.048M18.05 12.086h-.313"
     />
     <path
-      stroke="#200E32"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
@@ -29,7 +29,7 @@ const WalletIcon = React.forwardRef<
       clipRule="evenodd"
     />
     <path
-      stroke="#200E32"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

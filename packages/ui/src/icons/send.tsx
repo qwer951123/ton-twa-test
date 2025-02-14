@@ -1,7 +1,8 @@
 import * as React from "react";
+import { cn } from "../utils/cn";
 
 const SendIcon = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>(
-  (props, ref) => (
+  ({ ...props }, ref) => (
     <svg
       ref={ref}
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +13,7 @@ const SendIcon = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>(
       {...props}
     >
       <path
-        stroke="#200E32"
+        stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}

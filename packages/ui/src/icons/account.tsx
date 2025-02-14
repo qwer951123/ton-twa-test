@@ -14,14 +14,14 @@ const AccountIcon = React.forwardRef<
     {...props}
   >
     <path
-      stroke="#111"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="M11.579 12.5a4.778 4.778 0 1 0 0-9.557 4.778 4.778 0 0 0 0 9.556Z"
     />
     <path
-      stroke="#111"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
