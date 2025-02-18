@@ -13,26 +13,27 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
-    "@telegram-apps/sdk-react": "^3.0.10",
     "@repo/ton-connect-ui-react": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@tanstack/react-query": "^5.66.3",
+    "@telegram-apps/sdk-react": "^3.0.10",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@types/node": "^22",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "autoprefixer": "^10.4.17",
     "concurrently": "^9.1.2",
     "eslint": "^9.20.0",
     "ngrok": "5.0.0-beta.2",
-    "typescript": "5.7.3",
-    "tailwindcss": "^3.4.1",
     "postcss": "^8.4.35",
-    "autoprefixer": "^10.4.17"
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.7.3"
   }
 }

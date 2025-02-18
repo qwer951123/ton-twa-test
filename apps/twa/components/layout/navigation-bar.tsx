@@ -3,12 +3,12 @@
 import {
   NavigationBar as UINavigationBar,
   NavigationBarItem as UINavigationBarItem,
-  BareProps,
+  BaseProps,
 } from "@repo/ui";
 import { useIsMatchRoute } from "../../hooks/use-is-match-route";
 import Link from "next/link";
 
-interface NavigationItemProps extends BareProps<"div">, NavigationItem {}
+interface NavigationItemProps extends BaseProps<"div">, NavigationItem {}
 
 const Item = ({ name, href, icon, ...props }: NavigationItemProps) => {
   const isActive = useIsMatchRoute(href);
@@ -29,7 +29,7 @@ interface NavigationItem {
   icon: React.ReactNode;
 }
 
-interface NavigationBarProps extends BareProps<"nav"> {
+interface NavigationBarProps extends BaseProps<"nav"> {
   items: NavigationItem[];
 }
 

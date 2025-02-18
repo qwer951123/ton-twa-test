@@ -1,8 +1,14 @@
 :root {
   --separator-non-opaque: #3c3c435c;
   --accent-blue: #007aff;
+  --accent-purple: #4a0099;
   --background: #f7f6f0;
   --foreground: #171717;
   --primary: #0066ff;
   --muted-foreground: #737373;
+  --text-primary: #111111;
+  --text-secondary: #92918e;
+  --text-contrast: #f7f6f0;
+  --tag-background: #11111114;
+  --tag-contrast-background: #11111133;
 }

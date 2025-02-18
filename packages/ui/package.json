@@ -13,6 +13,7 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
+    "@repo/common": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "^2.4.0",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "@repo/tailwind-config": "workspace:*",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
