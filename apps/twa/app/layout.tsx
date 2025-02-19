@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "@repo/ui/theme";
 import MainLayout from "../components/layout/main-layout";
@@ -10,12 +10,13 @@ const font = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 export const metadata: Metadata = {
   title: "Gluon Apps",
   description: "Gluon Apps",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    viewportFit: "cover",
-    userScalable: false,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className}>
-      <body>
+      <body className="bg-background text-text-primary">
         <Providers>
           <MainLayout>{children}</MainLayout>
         </Providers>

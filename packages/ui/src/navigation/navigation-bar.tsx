@@ -10,7 +10,7 @@ const NavigationBar = ({ className, ...props }: NavigationBarProps) => {
     <UIComponent
       as="nav"
       className={cn(
-        `absolute w-full bottom-0 left-0 right-0
+        `w-full flex-none
           pb-[calc(env(safe-area-inset-bottom,0px)_+_8px)]
           bg-white flex
           before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[1px] before:bg-separator-non-opaque before:scale-y-50

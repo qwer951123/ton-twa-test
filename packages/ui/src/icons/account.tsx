@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const AccountIcon = React.forwardRef<
+export const AccountIcon = React.forwardRef<
   SVGSVGElement,
   React.SVGProps<SVGSVGElement>
 >((props, ref) => (
@@ -32,5 +32,3 @@ const AccountIcon = React.forwardRef<
 ));
 
 AccountIcon.displayName = "AccountIcon";
-
-export default AccountIcon;

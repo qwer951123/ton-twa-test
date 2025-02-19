@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const WalletIcon = React.forwardRef<
+export const WalletIcon = React.forwardRef<
   SVGSVGElement,
   React.SVGProps<SVGSVGElement>
 >((props, ref) => (
@@ -39,5 +39,3 @@ const WalletIcon = React.forwardRef<
 ));
 
 WalletIcon.displayName = "WalletIcon";
-
-export default WalletIcon;

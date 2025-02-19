@@ -3,12 +3,16 @@
 import { Button, FormatRatio, Tag } from "@repo/ui";
 import { useBannerData } from "../hooks/use-banner-data";
 import VaultIcon from "../../../components/vault-icon";
+import { Header } from "../../../components/layout/header";
+import BannerBackground from "./banner-background";
 
 const Banner = () => {
   const { data } = useBannerData();
 
   return (
-    <section className="bg-gradient-to-b from-accent-blue to-accent-purple px-6 py-5 text-text-contrast">
+    <section className="relative bg-gradient-to-b from-accent-blue to-accent-purple px-6 py-5 text-text-contrast">
+      <Header>Gluon Money</Header>
+      <BannerBackground className="absolute bottom-[82px] right-page-padding" />
       <Tag className="w-fit" variant="contrast">
         {data?.userCount}
       </Tag>

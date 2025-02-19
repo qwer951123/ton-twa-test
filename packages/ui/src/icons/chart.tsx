@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ChartIcon = React.forwardRef<
+export const ChartIcon = React.forwardRef<
   SVGSVGElement,
   React.SVGProps<SVGSVGElement>
 >((props, ref) => (
@@ -21,5 +21,3 @@ const ChartIcon = React.forwardRef<
 ));
 
 ChartIcon.displayName = "ChartIcon";
-
-export default ChartIcon;

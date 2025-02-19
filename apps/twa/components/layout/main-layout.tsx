@@ -7,8 +7,8 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="flex-1">{children}</div>
+    <main className="flex h-screen flex-col">
+      <div className="flex-1 overflow-y-auto">{children}</div>
       <NavigationBar items={navigator} />
     </main>
   );
