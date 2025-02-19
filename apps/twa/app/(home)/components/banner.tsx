@@ -3,7 +3,7 @@
 import { Button, FormatRatio, Tag } from "@repo/ui";
 import { useBannerData } from "../hooks/use-banner-data";
 import VaultIcon from "../../../components/vault-icon";
-import { Header } from "../../../components/layout/header";
+import { Header } from "./banner-header";
 import BannerBackground from "./banner-background";
 
 const Banner = () => {
@@ -14,7 +14,7 @@ const Banner = () => {
       <Header>Gluon Money</Header>
       <BannerBackground className="absolute bottom-[82px] right-page-padding" />
       <Tag className="w-fit" variant="contrast">
-        {data?.userCount}
+        {data?.userCount} Savers
       </Tag>
       <FormatRatio
         value={data?.apy}

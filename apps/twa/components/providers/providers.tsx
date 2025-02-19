@@ -2,6 +2,7 @@
 
 import TWAProvider from "./twa-provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { StoreProvider } from "../../store";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -13,8 +14,12 @@ const queryClient = new QueryClient({
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <TWAProvider>
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
-    </TWAProvider>
+    <StoreProvider>
+      <TWAProvider>
+        <QueryClientProvider client={queryClient}>
+          {children}
+        </QueryClientProvider>
+      </TWAProvider>
+    </StoreProvider>
   );
 }

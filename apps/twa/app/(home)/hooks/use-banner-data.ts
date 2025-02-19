@@ -13,7 +13,7 @@ export const useBannerData = () => {
         type: "super-savings",
         name: "Super Savings",
         provider: "SuperState",
-        description: "Save money and earn rewards",
+        description: "Super Savings - powered by SuperState",
         apy: 0.056,
         userCount: 1000,
       };

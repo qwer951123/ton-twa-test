@@ -9,8 +9,8 @@ const tagVariants = cva("block px-3 py-1 rounded-full", {
       contrast: "bg-tag-contrast-background text-text-contrast font-normal",
     },
     size: {
-      normal: "px-[10px] py-1 text-xs",
-      lg: "px-3 py-[6px] text-base",
+      normal: "px-[10px] py-1 text-xs leading-none",
+      lg: "px-3 py-[6px] text-base leading-none",
     },
   },
 });

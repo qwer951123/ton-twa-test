@@ -27,10 +27,29 @@ export default {
         "safe-bottom": "env(safe-area-inset-bottom, 0px)",
         "page-padding": "16px",
       },
-      screens: {
-        xs: "375px",
-        sm: "390px",
-        md: "430px",
+      keyframes: {
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-out-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "slide-in-left": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "slide-out-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "slide-in-right": "slide-in-right 0.2s ease-in-out",
+        "slide-out-right": "slide-out-right 0.2s ease-in-out",
+        "slide-in-left": "slide-in-left 0.2s ease-in-out",
+        "slide-out-left": "slide-out-left 0.2s ease-in-out",
       },
     },
   },

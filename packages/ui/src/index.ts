@@ -13,5 +13,8 @@ export * from "./tag";
 /* buttons */
 export * from "./button";
 
+/* drawers */
+export * from "./drawer";
+
 /* utils */
 export * from "./utils/cn";
