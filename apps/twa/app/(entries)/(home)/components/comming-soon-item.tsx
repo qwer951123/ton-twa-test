@@ -1,6 +1,6 @@
 import { BaseProps } from "@repo/ui";
-import { Vault } from "../../../types/vault";
-import VaultIcon from "../../../components/vault-icon";
+import { Vault } from "../../../../types/vault";
+import VaultIcon from "../../../../components/vault-icon";
 
 interface ComingSoonItemProps extends BaseProps<"div"> {
   product: Vault;

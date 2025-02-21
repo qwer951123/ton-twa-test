@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "@repo/ui/theme";
-import MainLayout from "../components/layout/main-layout";
 import Providers from "../components/providers/providers";
 import { Roboto } from "next/font/google";
 
@@ -27,9 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={font.className}>
       <body className="bg-background text-text-primary">
-        <Providers>
-          <MainLayout>{children}</MainLayout>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { Drawer } from "@repo/ui";
-import { useModal } from "../../../hooks/use-modal";
+import { useModal } from "../../../../hooks/use-modal";
 
 export const AccountDrawer = () => {
   const { open, onOpenChange } = useModal("account-drawer");

@@ -14,9 +14,9 @@ export default {
         "text-primary": "var(--text-primary)",
         "text-secondary": "var(--text-secondary)",
         "text-contrast": "var(--text-contrast)",
-        /** accent */
-        "accent-blue": "var(--accent-blue)",
-        "accent-purple": "var(--accent-purple)",
+        /** accent, allow opacity */
+        "accent-blue": "rgb(var(--accent-blue-rgb) / <alpha-value>)",
+        "accent-purple": "rgb(var(--accent-purple-rgb) / <alpha-value>)",
         /** tag */
         "tag-background": "var(--tag-background)",
         "tag-contrast-background": "var(--tag-contrast-background)",
@@ -46,10 +46,10 @@ export default {
         },
       },
       animation: {
-        "slide-in-right": "slide-in-right 0.2s ease-in-out",
-        "slide-out-right": "slide-out-right 0.2s ease-in-out",
-        "slide-in-left": "slide-in-left 0.2s ease-in-out",
-        "slide-out-left": "slide-out-left 0.2s ease-in-out",
+        "slide-in-right": "slide-in-right 0.25s cubic-bezier(0.0, 0, 0.2, 1)",
+        "slide-out-right": "slide-out-right 0.2s cubic-bezier(0.4, 0, 1, 1)",
+        "slide-in-left": "slide-in-left 0.25s cubic-bezier(0.0, 0, 0.2, 1)",
+        "slide-out-left": "slide-out-left 0.2s cubic-bezier(0.4, 0, 1, 1)",
       },
     },
   },

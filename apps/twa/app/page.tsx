@@ -1,3 +1,10 @@
-import { HomePage } from "./(home)/index";
+import EntriesLayout from "./(entries)/layout";
+import { HomePage } from "./(entries)/(home)/index";
 
-export default HomePage;
+export default function Page() {
+  return (
+    <EntriesLayout>
+      <HomePage />
+    </EntriesLayout>
+  );
+}

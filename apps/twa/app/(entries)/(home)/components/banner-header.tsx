@@ -1,6 +1,6 @@
 import { MenuIcon } from "@repo/ui/icons";
 import { BaseProps } from "@repo/ui";
-import { useModal } from "../../../hooks/use-modal";
+import { useModal } from "../../../../hooks/use-modal";
 
 export const Header = ({ children }: BaseProps<"header">) => {
   const { onOpenChange } = useModal("account-drawer");

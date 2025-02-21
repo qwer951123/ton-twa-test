@@ -5,7 +5,7 @@ import { cn } from "./utils/cn";
 const tagVariants = cva("block px-3 py-1 rounded-full", {
   variants: {
     variant: {
-      normal: "bg-tag-background text-text-primary font-semibold",
+      normal: "bg-tag-background text-text-primary font-medium",
       contrast: "bg-tag-contrast-background text-text-contrast font-normal",
     },
     size: {
