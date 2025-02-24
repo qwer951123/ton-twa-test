@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { animations, easeIn, easeOut, keyframes } from "./animations";
 
 export default {
   content: ["../../packages/ui/src/**/*.{js,ts,jsx,tsx}"],
@@ -28,28 +29,10 @@ export default {
         "page-padding": "16px",
       },
       keyframes: {
-        "slide-in-right": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-        "slide-out-right": {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(100%)" },
-        },
-        "slide-in-left": {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-        "slide-out-left": {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
+        ...keyframes,
       },
       animation: {
-        "slide-in-right": "slide-in-right 0.25s cubic-bezier(0.0, 0, 0.2, 1)",
-        "slide-out-right": "slide-out-right 0.2s cubic-bezier(0.4, 0, 1, 1)",
-        "slide-in-left": "slide-in-left 0.25s cubic-bezier(0.0, 0, 0.2, 1)",
-        "slide-out-left": "slide-out-left 0.2s cubic-bezier(0.4, 0, 1, 1)",
+        ...animations,
       },
     },
   },

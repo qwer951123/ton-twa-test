@@ -1,24 +1,24 @@
 import { Navigator } from "../types";
 import { AccountIcon, ChartIcon, SendIcon, WalletIcon } from "@repo/ui/icons";
 
-export const navigator: Navigator[] = [
+export const navigator: Navigator = [
   {
-    name: "Earn",
+    label: "Earn",
     href: "/",
     icon: <ChartIcon />,
   },
   {
-    name: "Send",
+    label: "Send",
     href: "/send",
     icon: <SendIcon />,
   },
   {
-    name: "Spend",
+    label: "Spend",
     href: "/spend",
     icon: <WalletIcon />,
   },
   {
-    name: "Account",
+    label: "Account",
     href: "/account",
     icon: <AccountIcon />,
   },

@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { BaseProps, cn } from "@repo/ui";
 
-interface MetricCardProps extends BaseProps<"div"> {
-  title: string;
-  value: string;
+interface MetricCardProps extends Omit<BaseProps<"div">, "title"> {
+  title: ReactNode;
+  value: ReactNode;
 }
 
 export const MetricCard = ({
@@ -14,13 +15,15 @@ export const MetricCard = ({
   return (
     <div
       className={cn(
-        "min-h-[120px] flex flex-col justify-center items-center gap-2 bg-accent-blue/10 p-4 rounded-2xl",
+        "min-h-[120px] flex flex-col justify-center items-center gap-6 bg-accent-blue/10 p-4 rounded-2xl",
         className
       )}
       {...props}
     >
-      <p className="text-sm text-text-secondary">{title}</p>
-      <p className="text-[40px] font-semibold text-text-primary">{value}</p>
+      <div className="text-sm text-text-primary leading-none">{title}</div>
+      <div className="text-[40px] font-semibold text-text-primary leading-none">
+        {value}
+      </div>
     </div>
   );
 };

@@ -27,16 +27,15 @@ const Banner = () => {
         <VaultIcon vault={data?.type} className="w-12 h-12" />
         <p className="text-xl leading-6">{data?.description}</p>
       </div>
-      <ConnectWrapper>
-        <Button
-          className="mt-5 w-full justify-between text-base font-semibold leading-none"
-          onClick={() => router.push("/vaults/super-savings")}
-        >
-          <div>{data?.name}</div>
-          <Tag className="bg-text-contrast text-text-primary" size="lg">
-            JOIN
-          </Tag>
-        </Button>
+      <ConnectWrapper
+        as={Button}
+        className="mt-5 w-full justify-between text-base font-semibold leading-none"
+        onClick={() => router.push("/vaults/super-savings")}
+      >
+        <div>{data?.name}</div>
+        <Tag className="bg-text-contrast text-text-primary" size="lg">
+          JOIN
+        </Tag>
       </ConnectWrapper>
     </section>
   );

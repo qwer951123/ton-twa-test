@@ -7,37 +7,37 @@ import {
 } from "@repo/ui";
 import { useIsMatchRoute } from "../../hooks/use-is-match-route";
 import Link from "next/link";
+import { Navigator, NavigatorItem } from "../../types";
 
-interface NavigationItemProps extends BaseProps<"div">, NavigationItem {}
+interface NavigationItemProps extends BaseProps<"div">, NavigatorItem {}
 
-const Item = ({ name, href, icon, ...props }: NavigationItemProps) => {
+const NavigationItem = ({
+  label,
+  href,
+  icon,
+  ...props
+}: NavigationItemProps) => {
   const isActive = useIsMatchRoute(href);
 
   return (
     <UINavigationBarItem {...props} active={isActive}>
       <Link href={href} className="flex flex-col items-center gap-1">
         {icon}
-        {name}
+        {label}
       </Link>
     </UINavigationBarItem>
   );
 };
 
-interface NavigationItem {
-  name: string;
-  href: string;
-  icon: React.ReactNode;
-}
-
 interface NavigationBarProps extends BaseProps<"nav"> {
-  items: NavigationItem[];
+  list: Navigator;
 }
 
-const NavigationBar = ({ items, ...props }: NavigationBarProps) => {
+const NavigationBar = ({ list, ...props }: NavigationBarProps) => {
   return (
     <UINavigationBar {...props}>
-      {items.map((item) => (
-        <Item key={item.href} {...item} />
+      {list.map((item) => (
+        <NavigationItem key={item.href} {...item} />
       ))}
     </UINavigationBar>
   );

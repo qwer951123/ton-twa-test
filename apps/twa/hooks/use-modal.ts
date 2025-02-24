@@ -7,6 +7,7 @@ import { useCallback, useMemo } from "react";
 type ModalData = {
   // undefined is used to indicate that the modal has no data
   "account-drawer": undefined;
+  "vault-deposit": undefined;
 };
 
 type ModalKey = keyof ModalData;

@@ -13,8 +13,9 @@ export * from "./tag";
 /* buttons */
 export * from "./button";
 
-/* drawers */
+/* dialogs */
 export * from "./drawer";
+export * from "./sheet";
 
 /* utils */
 export * from "./utils/cn";

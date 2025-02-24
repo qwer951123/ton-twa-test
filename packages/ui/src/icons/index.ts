@@ -5,3 +5,7 @@ export * from "./wallet";
 export * from "./menu";
 export * from "./close";
 export * from "./arrow-left";
+export * from "./activity";
+export * from "./graph";
+export * from "./user";
+export * from "./user-2";

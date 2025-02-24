@@ -17,6 +17,8 @@
     "@repo/ui": "workspace:*",
     "@tanstack/react-query": "^5.66.3",
     "@telegram-apps/sdk-react": "^3.0.10",
+    "@ton/core": "^0.60.1",
+    "@ton/ton": "^15.2.1",
     "immer": "^10.1.1",
     "jotai": "^2.12.1",
     "jotai-immer": "^0.4.1",

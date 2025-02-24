@@ -14,6 +14,7 @@ const buttonVariants = cva("flex items-center justify-center", {
     variant: {
       // button with background color
       primary: `bg-primary text-text-contrast`,
+      text: `bg-transparent text-primary px-0! outline-none`,
     },
     size: {
       lg: "px-5 py-4 rounded-2xl text-[18px] font-semibold",
